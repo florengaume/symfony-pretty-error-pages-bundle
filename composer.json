@@ -20,6 +20,11 @@
   },
   "suggest": {
     "symfony/translation": "Required to generate error pages in multiple languages"
+  },
+  "repositories": {
+    "pretty-error-pages": {
+      "type": "vcs",
+      "url": "https://github.com/florengaume/symfony-pretty-error-pages-bundle.git"
+    }
   }
-
 }
