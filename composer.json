@@ -1,0 +1,21 @@
+{
+  "name": "florengaume/symfony-pretty-error-pages-bundle",
+  "description": "Bootstrap-powered pretty error pages for Symfony (404, 403, 500, etc.) with easy installer.",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Florent Gaume",
+      "email": "support@sycorax.fr"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Florengaume\\PrettyErrorPagesBundle\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.1",
+    "symfony/framework-bundle": "^6.0|^7.0"
+  }
+}
