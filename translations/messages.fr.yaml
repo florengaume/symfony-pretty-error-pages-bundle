@@ -1,0 +1,39 @@
+error_404:
+  title: "404 - Page introuvable"
+  code: "404"
+  code_color: "text-danger"
+  heading: "Oups ! Page introuvable"
+  message: "La page que vous cherchez n’existe pas ou a été déplacée."
+  button: "Retour à l’accueil"
+  button_class: "btn-primary"
+  lang: "fr"
+
+error_500:
+  title: "500 - Erreur interne du serveur"
+  code: "500"
+  code_color: "text-warning"
+  heading: "Erreur interne du serveur"
+  message: "Une erreur inattendue est survenue.<br>Nos équipes sont prévenues."
+  button: "Retour à l’accueil"
+  button_class: "btn-secondary"
+  lang: "fr"
+
+error_403:
+  title: "403 - Accès interdit"
+  code: "403"
+  code_color: "text-info"
+  heading: "Accès interdit"
+  message: "Vous n’avez pas les droits pour accéder à cette page."
+  button: "Retour à l’accueil"
+  button_class: "btn-info"
+  lang: "fr"
+
+error_default:
+  title: "Erreur"
+  code: "😢"
+  code_color: "text-success"
+  heading: "Une erreur est survenue"
+  message: "Merci de réessayer ou de contacter le support."
+  button: "Retour à l’accueil"
+  button_class: "btn-success"
+  lang: "fr"

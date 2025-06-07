@@ -17,5 +17,9 @@
   "require": {
     "php": ">=8.1",
     "symfony/framework-bundle": "^6.0|^7.0"
+  },
+  "suggest": {
+    "symfony/translation": "Required to generate error pages in multiple languages"
   }
+
 }

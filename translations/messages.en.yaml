@@ -1,0 +1,39 @@
+error_404:
+  title: "404 - Page not found"
+  code: "404"
+  code_color: "text-danger"
+  heading: "Oops! Page not found"
+  message: "The page you’re looking for doesn’t exist or has been moved."
+  button: "Back to homepage"
+  button_class: "btn-primary"
+  lang: "en"
+
+error_500:
+  title: "500 - Internal server error"
+  code: "500"
+  code_color: "text-warning"
+  heading: "Internal server error"
+  message: "An unexpected error has occurred.<br>Our team has been notified."
+  button: "Back to homepage"
+  button_class: "btn-secondary"
+  lang: "en"
+
+error_403:
+  title: "403 - Forbidden"
+  code: "403"
+  code_color: "text-info"
+  heading: "Forbidden"
+  message: "You don’t have permission to access this page."
+  button: "Back to homepage"
+  button_class: "btn-info"
+  lang: "en"
+
+error_default:
+  title: "Error"
+  code: "😢"
+  code_color: "text-success"
+  heading: "An error has occurred"
+  message: "Please try again or contact support."
+  button: "Back to homepage"
+  button_class: "btn-success"
+  lang: "en"
