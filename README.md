@@ -84,40 +84,38 @@ Régénérez ensuite les pages avec la commande, tout sera mis à jour automatiq
 
 ---
 
-## 🗣️ Variables de langue prises en charge
+## 🔄 Personnaliser le template de base (override optionnel)
 
-Dans chaque entrée YAML, vous pouvez définir :
+Par défaut, le bundle utilise son propre template situé ici :
 
-- `title` : `<title> ... </title>`
-- `code` : numéro/code affiché (404, 500, etc. ou même emoji !)
-- `code_color` : classe bootstrap couleur pour le code (ex : `text-danger`)
-- `heading` : le titre principal de la page
-- `message` : le texte d’explication (peut contenir du HTML)
-- `button` : texte du bouton retour
-- `button_class` : classe Bootstrap du bouton
-- `lang` : code langue pour la balise `<html lang="...">`
-
-Vous pouvez ajouter vos propres variables dans le template de base et dans le YAML.
-
----
-
-## 🌍 Ajout d’une nouvelle langue
-
-1. Copiez un fichier YAML existant (ex : `messages.fr.yaml`)
-2. Traduisez-le, par ex : `messages.de.yaml`
-3. Lancez :
-
-```bash
-php bin/console pretty-error-pages:generate --lang=de
+```
+vendor/florengaume/symfony-pretty-error-pages-bundle/templates/error_base.html.twig
 ```
 
----
+Si tu veux personnaliser ce template de base pour l'adapter à tes besoins sans modifier directement le bundle, fais ainsi :
 
-## 🛠️ Exemple : Modifier le modèle ou une langue
+### 📂 Étape 1 : Copier le template de base dans ton projet Symfony
 
-- **Vous voulez changer le style Bootstrap ou le message ?**
-  1. Modifiez `templates/error_base.html.twig` ou le fichier YAML dans `translations/`
-  2. Relancez la commande : `php bin/console pretty-error-pages:generate`
+```bash
+mkdir -p templates/bundles/PrettyErrorPagesBundle
+cp vendor/florengaume/symfony-pretty-error-pages-bundle/templates/error_base.html.twig templates/bundles/PrettyErrorPagesBundle/error_base.html.twig
+```
+
+### ✏️ Étape 2 : Personnalise ton template
+
+Édite simplement ce fichier que tu viens de copier :
+
+```
+templates/bundles/PrettyErrorPagesBundle/error_base.html.twig
+```
+
+### 🚀 Étape 3 : Régénère les pages avec ton nouveau template
+
+```bash
+php bin/console pretty-error-pages:generate
+```
+
+Désormais, ton template personnalisé sera utilisé automatiquement à la place de celui du bundle.
 
 ---
 
